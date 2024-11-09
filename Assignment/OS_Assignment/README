@@ -1,0 +1,50 @@
+For Compilation,
+
+To compile the program, use the provided Makefile. Simply navigate to the directory containing the source files and run the following command:
+
+- make
+
+This will generate the executable file named "mssv".
+
+
+For usage,
+
+After compiling the program, you can run it from the command line. The program expects two arguments:
+
+Here's the syntax to run the program
+
+./mssv solution.txt 1
+
+i ran this for example,
+
+./mssv solution.txt 1
+
+
+
+purpose of each file,
+
+main.c - The purpose of this file is to be the program’s main entry. It will read a sudoku solution from a file, process it, handle command-line arguments while creating threads in parallel that validate some results displayed on the console and, finally, release resources. 
+
+threads.c - This file contains the implementation of thread creation, execution, and synchronization. 
+
+results.c - The printing of validation results is handled by this file. 
+
+input.c - This file handles reading the Sudoku solution from a file. 
+
+cleanup.c -This file contains functions for cleaning up resources used by threads. 
+
+sync.c - This file defines synchronization primitives such as mutex and condition variables. 
+
+threads.h - header file for threads.c
+
+results.c - header file for results.c
+
+input.h - header file for input.c
+
+cleanup.h - header file for cleanup.c
+
+sync.h - header file for sync.c
+
+Makefile - the makefile for these codes
+
+solution.txt  - the valid test data that was given by the problem description.
